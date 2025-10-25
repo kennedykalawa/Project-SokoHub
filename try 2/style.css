@@ -1,0 +1,141 @@
+/* Reset default browser padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background - replace URL() with your image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container holding both sides */
+.container {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+}
+
+/* LEFT SIDE (LOGO + TEXT) */
+.left-side {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* LOGO IMAGE STYLE */
+.logo-box img {
+    width: 150px;      /* change this to adjust size */
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    width: 80%;
+}
+
+/* RIGHT SIDE (LOGIN FORM) */
+.right-side {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #f39c12;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #d8860b;
+}
+
+.switch-page {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.switch-page a {
+    color: #27ae60;
+    text-decoration: none;
+}
+.subtitle {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.switch-page {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch-page a {
+    color: #ff7b00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
+}
+
+.thankyou {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #25af55;
+    font-weight: 600;
+}

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url("p1.jpeg");
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+ .section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  /*   margin: 50px;
+    margin-top: 30vh;
+    height: 40vh;
+    width: 560px;
+    max-width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(25, 30, 35, 0.12); */
+
+ }
+ .logo{
+    display: flex;
+    flex-direction:row ;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+ }
+ img{
+    
+    width: 150%;
+	max-width: 620px;   /* control visual size on large screens */
+	height: auto;
+	display: flex;
+    flex-direction: row;
+	object-fit: contain;
+    margin-right: 20px;
+ }
+/*  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+ } */
+
+ form{
+    /*background-color: black;
+    margin: 50px;
+    padding: 10px;
+    
+     font-size: 30px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     color: aliceblue;
+     text-decoration: none; */
+     gap: 12x;
+    width: 180%;
+    height: 30vh;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     
+     font-size: 15px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: aliceblue;
+     cursor: pointer;
+ }
+  .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    border-color: white;
+       
+ } 
+/* .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 12px;
+    
+}*/
+.input input[type="text"],
+.input input[type="tel"],
+.input input[type="password"]
+{
+    width: 180%;
+    padding: 12px 14px;
+    border-radius: 29px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background:#35cf21;
+    background-image: url("img2.jpg");
+    color:#222;
+    font-size: 14px;
+    outline: none;
+    transition: box-shadow .12s, border-color .12s;
+}
+.checkbox{
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+
+}
+.btn{
+    width: 190px;
+    justify-content: left;
+
+}
+.btn1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 29px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    background:#35cf21;
+}
+.tag{
+    margin-top: 10px;
+    gap: 10px;
+}
+a{
+    color: rgb(18, 190, 18);
+    text-decoration: none;
+}

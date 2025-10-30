@@ -3,50 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sokohub nav bar</title>
     <style>
+        /*style the font family of the text*/
         body{
             font-family: 'Arial', sans-serif;
         }
+        /*style the nav bar of the nav bar*/
         nav{
             display: flex;
             width: 100%;
-            height: 50px;
+            height: 70px;
             color: white;
             background-color: limegreen;
             justify-content: space-between;
             align-items: center;
             box-sizing: border-box;
         }
+        /*styling the logo of the nav bar*/
         img{
             cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 150px;
-            height: 50px;
+            height: 70px;
         }
+        /*styling each element on the nav bar*/
         #home, #products, #about, #contact, #in, #out{
             cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 150px;
-            height: 50px;
+            height: 70px;
         }
+        /*focus is used here to indicate the tab that is currently active*/
         #home:focus, #products:focus, #about:focus, #contact:focus, #in:focus{
             background-color: orangered;
             color: white;
         }
+        /*hover is when the cursor is above the element*/
         #home:hover, #products:hover, #about:hover, #contact:hover, #in:hover{
             background-color: #87CEEB;
             color: white;
             padding: 0;
         }
+        /*this is the id of the login button*/
         #in{
-            width: 90px;
-            height: 50px;
-            padding: 0;
+            width: 70px;
+            border-radius: 15px;
+            height: 40px;
+            padding-right: 10px;
+            border: none;
         }
     </style>
 </head>
@@ -54,11 +63,13 @@
     <nav>
         <img src="sokohub logo.jpg" alt="">
         <section id="logo"></section>
-        <section id="home">home</section>
-        <section id="products">our products</section>
-        <section id="about">about us</section>
-        <section id="contact">cotact us</section>
-        <section id="in">sign in</section>
+        <section id="home">Home</section>
+        <section id="products">Our Products</section>
+        <section id="about">About Us</section>
+        <section id="contact">Cotact us</section>
+        <section>
+            <button id="in">sign in </button>
+        </section>
     </nav>
     <div id="main">
         

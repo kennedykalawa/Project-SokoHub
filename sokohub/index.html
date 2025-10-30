@@ -40,7 +40,7 @@
         }
         /*focus is used here to indicate the tab that is currently active*/
         #home:focus, #products:focus, #about:focus, #contact:focus, #in:focus{
-            background-color: orangered;
+            background-color: #d8860b;
             color: white;
         }
         /*hover is when the cursor is above the element*/
@@ -50,12 +50,28 @@
             padding: 0;
         }
         /*this is the id of the login button*/
-        #in{
+        #in, #up{
             width: 70px;
             border-radius: 15px;
             height: 40px;
+            gap: 20px;
             padding-right: 10px;
             border: none;
+        }
+        #up{
+            background-color: #d8860b;
+            cursor: pointer;
+        }
+        #up:hover{
+	        transform: scale(1.40);
+            transition: transform 0.3s ease;
+        }#in:hover{
+            transform: scale(1.40);
+            transition: transform 0.3s ease;
+        }
+        #buttons{
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
@@ -67,9 +83,11 @@
         <section id="products">Our Products</section>
         <section id="about">About Us</section>
         <section id="contact">Cotact us</section>
-        <section>
-            <button id="in">sign in </button>
+        <section id="buttons">
+            <button id="up">Register</button>
+            <button id="in">Sign in </button>
         </section>
+        
     </nav>
     <div id="main">
         

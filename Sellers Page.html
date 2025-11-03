@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    
+    <div id="flex">
+
+        <!--Hero Content -->
+        <div id="hero">
+            <!--Logo -->
+            <div id="logo">SKH</div>
+            <h1>Sokohub</h1>
+
+            <!-- Seller Welcome Message -->
+            <p>Become a Sokohub Vendor!</p>
+            <p>Join our marketplace, connect with thousands of customers, and grow your business today.</p>
+        </div>
+
+        <!--Seller Registration Form-->
+            <h2>Create Your Seller Account</h2>
+            <p>Tell us about your business to get started selling on Sokohub.</p>
+
+            <form action="#" method="POST">
+                    <!-- Business Name Field -->
+                    
+                        <label for="businessName" class="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
+                        <input type="text" id="businessName" name="businessName" required placeholder="e.g. Ian's Fresh Produce">
+                    <!--Business Type Field-->
+                        <label for="businessType">Type of Business</label>
+                        <select id="businessType" name="businessType" required>
+                            <option value="" disabled selected>Select a category</option>
+                            <option value="retail">Retail/General Goods</option>
+                            <option value="food_beverage">Food & Beverage</option>
+                            <option value="crafts">Handmade/Crafts</option>
+                            <option value="services">Service Provider</option>
+                            <option value="other">Other</option>
+                        </select>
+                    <!-- Email Field -->
+                        <label for="email">Official Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="business@example.com">
+                    <!-- Phone Number Field -->
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="e.g. +254 7XX XXX XXX">
+                    <!-- Password Field -->
+                        <label for="password">Create Password</label>
+                        <input type="password" id="password" name="password" required placeholder="Minimum 8 characters">
+                    <!-- Confirm Password Field-->
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter your password">
+                
+
+                <!-- Terms and Conditions Checkbox -->
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <label for="terms">
+                        I agree to the 
+                        <a href="#">Terms of Service</a> and 
+                        <a href="#">Privacy Policy</a>.
+                    </label>
+                
+
+                <!-- Registration Button -->
+                <button type="submit">
+                    Register and Start Selling
+                </button>
+            </form>
+
+            <!-- Login Link -->
+            <p> Already have a seller account?<a href="#">Sign In Here</a> </p> 
+               
+    </div>
+</body>
+</html>

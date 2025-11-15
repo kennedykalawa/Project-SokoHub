@@ -68,3 +68,17 @@ body{
         a{
             text-decoration: none;
         }
+        .section-2{
+            display: flex;
+        }
+        .shopping{
+            width: 50%;
+
+        }
+        .images{
+            width: 50%;
+        }
+       .img{
+        width: 40vw;
+        height: 30vh;
+     }

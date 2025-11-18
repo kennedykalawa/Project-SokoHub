@@ -8,7 +8,7 @@
 /* Background - replace URL() with your image */
 body {
     font-family: Arial, sans-serif;
-    background: url('background.jpg') no-repeat center center/cover;
+   /*  background: url('background.jpg') no-repeat center center/cover; */
     height: 100vh;
     display: flex;
     justify-content: center;

@@ -110,7 +110,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: rgb(43, 221, 26); */
+    
     color: black;
     font-style: italic;
     font-size: 20px;
@@ -125,14 +125,18 @@ body{
 .product-info h3 {
     font-size: 1.1em;
     margin-bottom: 5px;
-    /* color: var(--dark-color); */
+    
     color: rgb(43, 221, 26);
+}
+.product-info h4 {
+    font-size: 1.1em;
+    color: rgb(252, 187, 11);
 }
 
 .price {
     font-size: 1.2em;
     font-weight: 700;
-    /* color: var(--primary-color); */
+    
     margin-top: 5px;
 }
 .value-prop {

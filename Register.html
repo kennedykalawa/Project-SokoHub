@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SokoHub - Register</title>
+    <style>
+        
+        body{
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: sans-serif;
+            background-color: #f4f4f4; 
+            min-height: 100vh;
+            margin: 0;
+        }
+       
+        nav{
+            display: flex;
+            width: 100%;
+            height: 50px;
+            color: white;
+            background-color: limegreen;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        img{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+        }
+        #home, #products, #about, #contact, #in, #out{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+        }
+        #home:focus, #products:focus, #about:focus, #contact:focus, #in:focus{
+            background-color: orangered;
+            color: white;
+        }
+        #home:hover, #products:hover, #about:hover, #contact:hover, #in:hover{
+            background-color: #d8860b;
+            color: white;
+            padding: 0;
+        }
+       
+        #in, #up{
+            width: 70px;
+            border-radius: 15px;
+            height: 40px;
+            gap: 20px;
+            padding-right: 10px;
+            border: none;
+        }
+        #up{
+            background-color: #d8860b;
+            cursor: pointer;
+        }
+        #up:hover{
+	        transform: scale(1.40);
+            transition: transform 0.3s ease;
+        }#in:hover{
+            transform: scale(1.40);
+            transition: transform 0.3s ease;
+        }
+        #buttons{
+            display: flex;
+            gap: 10px;
+        }
+        nav a{ 
+            color: white;
+            text-decoration: none;
+        }
+
+       
+        
+        .main-content {
+            background-color: white;
+            padding: 40px;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 450px;
+        }
+
+        h2{
+            font-size: 36px;
+            color: rgb(252, 187, 11) ; 
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            color: #555; 
+            margin-bottom: 30px;
+        }
+
+        
+        .btns{
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+        }
+        
+        .role-button {
+            display: block;
+            width: 100%;
+            background-color: rgb(43, 221, 26);
+            height: 50px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            line-height: 50px; 
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .role-button:hover{
+            background-color: rgb(252, 187, 11);
+            color: #333; 
+            transform: translateY(-2px);
+        }
+
+        .home-button-container{
+            margin-top: 20px;
+        }
+        .home-button-container a {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px; 
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(43, 221, 26);
+            color: white;
+            font-size: 30px;
+            font-weight: 800;
+            text-decoration: none;
+            border: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        .home-button-container a:hover{
+            background-color: rgb(252, 187, 11);
+            color: black;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+      <nav>
+        <img src="../sokohub/sokohub logo.jpg" alt="">
+        <section id="logo"></section>
+        <section id="home">
+            <a href="../index.html">Home</a></section>
+        <section id="products">
+            <a href="../products.html">our products</a></section>
+        <section id="about">
+            <a href="../About.html">about us</a>
+        </section>
+        <section id="contact">
+            <a href="./Contact us.html">contact us</a></section>
+         <section id="buttons">
+            <a href="./register.html"><button id="up">Register</button></a>
+            <a href=".//try 2/login.html"><button id="in">sign in </button></a>
+        </section>
+    </nav>
+
+    <div class="main-content">
+        <h2>Welcome to SokoHub</h2>
+        <p>We're very happy to have you! You want to join us as a:</p>
+        
+        <div class="btns">
+            <div class="btn-group">
+                <a href="./sellers.page.html" class="role-button">Seller</a>
+                <a href="./try 2/sign up.html" class="role-button">Buyer/Customer</a>
+                <a href="./delivery.html" class="role-button">Delivery Personnel</a>
+            </div>
+            
+            <div class="home-button-container">
+                <a href="./index.html">Home🏠</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,11 +1,9 @@
-# SokoHub E-Commerce Landing Pages
+# SokoHub – E-Commerce Platform Overview
 
-SokoHub is a front-end project that showcases the core landing and registration pages for an e-commerce platform designed to support multiple user roles. The project focuses on creating a simple, clean, and visually consistent interface that guides users through essential pages such as registration, login, contact information, and role-based onboarding.
+SokoHub is a developing e-commerce platform designed to connect local sellers, buyers, and delivery personnel within a unified digital marketplace. The goal of SokoHub is to simplify how small and medium businesses showcase their products, how customers discover items, and how deliveries are coordinated—creating a smooth, end-to-end buying experience.
 
-The platform includes dedicated pages for sellers, buyers, and delivery personnel, each linked from a central registration hub. The delivery registration page is uniquely designed to capture details such as transport type and identification, while the Contact Us page provides a clean layout for user inquiries and direct company information.
+At its core, SokoHub aims to provide a structured environment where sellers can register, list products, and manage basic store interactions. Buyers can browse products, learn about sellers, and initiate purchases. Delivery personnel form the third key role, ensuring goods move efficiently from sellers to customers. By separating these user roles, SokoHub mirrors the structure of real-world marketplace ecosystems while keeping the user experience simple and approachable.
 
-Styling across the project is managed through embedded CSS within each HTML file. This approach ensures that every page is self-contained while maintaining a unified aesthetic. Key design elements include a lime-green navigation bar, white content containers with rounded corners, and orange-brown buttons for visual contrast. These choices help present a modern, approachable look suitable for an online marketplace.
+This repository contains the front-end landing pages that introduce users to the platform. These pages handle role selection, registration, login, and basic navigation. The design focuses on simplicity and consistency using embedded CSS, making each file self-contained while still following a unified visual identity. The lime-green branding, orange-brown accents, and clean white content areas represent SokoHub’s fresh and modern aesthetic.
 
-The file structure references additional pages such as the home page, products listing, and seller registration, allowing smooth navigation between major sections of the platform.
-
-SokoHub serves as a practical demonstration of front-end layout design, multi-role registration flows, and consistent branding in a lightweight web environment. It is well-suited for learning, prototyping, or expanding into a full e-commerce system.
+While this version is a front-end prototype, SokoHub is envisioned as a scalable platform that can later integrate product databases, order management systems, and delivery tracking. It serves as a foundation for future development, showcasing the structure of an e-commerce platform ready to expand into a full-featured solution for local digital commerce.

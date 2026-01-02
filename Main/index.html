@@ -3,150 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SokoHub</title>
+    <title>SokoHub | Modern Marketplace</title>
     <link rel="stylesheet" href="indexx.css">
 </head>
 <body>
-    <!--Navbar-->
-     <nav>
-        <img src="./sokohubimg/sokohub logo.jpg" alt="">
-        <section id="logo"></section>
-        <section id="home">
-            <a href="./index.html">Home</a></section>
-        <section id="products">
-            <a href="./products.html">our products</a></section>
-        <section id="about">
-            <a href="./About.html">about us</a>
-        </section>
-        <section id="contact">
-            <a href="./Contact us.html">contact us</a>
-        </section>
-         <section id="buttons">
-            <a href="./Register.html"><button id="up">Register</button></a>
-            <a href="./Login&Signup/login.html"><button id="in">sign in </button></a>
-        </section>
+    <nav>
+        <div class="nav-container">
+            <img src="./sokohubimg/sokohub logo.jpg" alt="SokoHub Logo" class="logo-img">
+            <div class="nav-links">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./products.html">Our Products</a>
+                <a href="./About.html">About Us</a>
+                <a href="./Contact us.html">Contact Us</a>
+            </div>
+            <div id="buttons">
+                <a href="./Register.html"><button id="up">Register</button></a>
+                <a href="./Login&Signup/login.html"><button id="in">Sign In</button></a>
+            </div>
+        </div>
     </nav>
-    <div id="main">
-        
-    </div>
-    <!--End of Navbar-->
-    <!--Hero Section-->
-    <section class="Hero-s">
-    <div class="hero">
-        <h2>Welcome to SokoHub marketplace</h2>
-    
 
-    </div>
+    <section class="hero-s">
+        <div class="hero-content">
+            <h2>Welcome to SokoHub Marketplace</h2>
+            <p>Simple, fast & reliable trading for everyone.</p>
+        </div>
     </section>
-    <!-- start of second section-->
-     <section class="section-2">
-        <div class="shopping">
-            <p>
-                SokoHub is a secure e-commerce platform where you can sell, buy products and get the products delivered to you instantly.
 
-            </p>
-            <p>
-                This is your most trusted marketplace — simple, fast & reliable.
-                Let’s connect, trade, and grow together.
-            </p>
-            <!-- <p>
-            SokoHub is a web-based e-commerce platform designed to empower small and medium-sized local businesses by providing them with a digital marketplace to showcase and sell their products online, bridging the gap between traditional retail and digital commerce.
-            </p> -->
-           
-        </div> 
-      <div >
-        <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image-placeholder">
-                        <!-- 33% OFF - Gas -->
-                        <img src="./sokohubimg/7.jpeg" alt="gas" style="width: 32vw; height: 45vh;"> >
-                    </div>
-                    <div class="product-info">
-                        <h3>Local Gas</h3>
-                        <h4>33% OFF - Gas</h4>
-                        <p class="price">
-                            <span class="sale-price">Ksh 1200</span>
-                            <span class="original-price">- Ksh 1,800</span>
-                        </p>
-                    </div>
-                </div>
-                 <div class="product-card">
-                    <div class="product-image-placeholder">
-                       <!--  25% OFF - Electronics -->
-                        
-                        <img src="./sokohubimg/8.jpeg" alt="electronics" style="width: 30vw; height: 45vh;">
-                    </div>
-                    <div class="product-info">
-                        <h3>all electronics</h3>
-                        <h4>25% OFF - Electronics</h4>
-                        <p class="price">
-                            <span class="sale-price">Ksh 2,625</span>
-                            <span class="original-price">- Ksh 3,500</span>
-                        </p>
-                    </div>
-                </div>
-                 <div class="product-card">
-                    <div class="product-image-placeholder">
-                        <!-- 40% OFF - Clothes -->
-                        <img src="./sokohubimg/11.jpg" alt="clothes" style="width: 30vw; height: 45vh;">
-                    </div>
-                    <div class="product-info">
-                        <h3>All classic sizes</h3>
-                        <h4>40% OFF - Clothes</h4>
-                        <p class="price">
-                            <span class="sale-price">Ksh 4,500</span>
-                            <span class="original-price">- Ksh 7,500</span>
-                        </p>
-                    </div>
-                </div>
-                 <div class="product-card">
-                    <div class="product-image-placeholder">
-                        <!-- 50% OFF - Food -->
-                         <img src="./sokohubimg/4.jpeg" alt="food" style="width: 40vw; height: 45vh;">
-                    </div>
-                    <div class="product-info">
-                        <h3>Processed and organic</h3>
-                        <h4>50% OFF - Food</h4>
-                        <p class="price">
-                            <span class="sale-price">Ksh 1,400</span>
-                            <span class="original-price">- Ksh 2,000</span>
-                        </p>
-                    </div>
-                </div>
-                </div>
+    <main class="container">
+        <section class="shopping-intro">
+            <p>SokoHub is a secure e-commerce platform where you can sell, buy, and get products delivered instantly. Let’s connect, trade, and grow together.</p>
+        </section>
 
-        </div> 
-
-        <div class="value-prop">
-            <h2> Why Choose and Purchase products THrough SokoHub?</h2>
-            <div class="prop-grid">
-      
-                <div class="prop-item">
-
-                    <h3>Instant Delivery and Order Tracking</h3>
-                    <p>
-                        SokoHub emphasizes trust through real-time order tracking, ensuring buyers are always informed about the status of their purchases.
-                       
-                        </p>
+        <section class="product-grid">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./sokohubimg/7.jpeg" alt="Gas Tank">
                 </div>
-                <div class="prop-item">
-                    <h3>Secure Payment</h3>
-                    <p>
-                        
-                         The platform offers secure payment options, including M-Pesa, PayPal, and bank cards, backed by robust security measures like SSL/TLS and OAuth2.
-                        </p>
-                </div>
-                <div class="prop-item">
-                    <h3>Customer Reviews</h3>
-                    <p>
-                        
-                        Customer reviews and seller insights foster transparency and build trust, while loyalty points and promo codes encourage repeat purchases and community engagement.
-
+                <div class="product-info">
+                    <h3>Local Gas</h3>
+                    <h4>33% OFF</h4>
+                    <p class="price">
+                        <span class="sale-price">Ksh 1,200</span>
+                        <span class="original-price">Ksh 1,800</span>
                     </p>
                 </div>
             </div>
-        </div>
-     </section>
-     <!--End of second section-->
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./sokohubimg/8.jpeg" alt="Electronics">
+                </div>
+                <div class="product-info">
+                    <h3>Electronics</h3>
+                    <h4>25% OFF</h4>
+                    <p class="price">
+                        <span class="sale-price">Ksh 2,625</span>
+                        <span class="original-price">Ksh 3,500</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./sokohubimg/11.jpg" alt="Clothes">
+                </div>
+                <div class="product-info">
+                    <h3>Classic Apparel</h3>
+                    <h4>40% OFF</h4>
+                    <p class="price">
+                        <span class="sale-price">Ksh 4,500</span>
+                        <span class="original-price">Ksh 7,500</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./sokohubimg/4.jpeg" alt="Organic Food">
+                </div>
+                <div class="product-info">
+                    <h3>Organic Food</h3>
+                    <h4>50% OFF</h4>
+                    <p class="price">
+                        <span class="sale-price">Ksh 1,400</span>
+                        <span class="original-price">Ksh 2,000</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="value-prop">
+            <h2>Why Choose SokoHub?</h2>
+            <div class="prop-grid">
+                <div class="prop-item">
+                    <h3>Instant Delivery</h3>
+                    <p>Real-time order tracking ensures you are always informed about your purchase status.</p>
+                </div>
+                <div class="prop-item">
+                    <h3>Secure Payment</h3>
+                    <p>Pay safely via M-Pesa, PayPal, or Bank Cards with SSL encryption.</p>
+                </div>
+                <div class="prop-item">
+                    <h3>Trusted Reviews</h3>
+                    <p>Foster transparency with verified customer reviews and seller insights.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

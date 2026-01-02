@@ -1,183 +1,143 @@
-body{
-            font-family: 'Arial', sans-serif;
-        }
-        nav{
-            display: flex;
-            width: 100%;
-            height: 50px;
-            color: white;
-            background-color: limegreen;
-            justify-content: space-between;
-            align-items: center;
-            box-sizing: border-box;
-        }
-        img{
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 150px;
-            height: 50px;
-        }
-        #home, #products, #about, #contact, #in, #out{
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 150px;
-            height: 50px;
-        }
-        #home:focus, #products:focus, #about:focus, #contact:focus, #in:focus{
-            background-color: orangered;
-            color: white;
-        }
-        #home:hover, #products:hover, #about:hover, #contact:hover, #in:hover{
-            background-color: #d8860b;
-            color: white;
-            padding: 0;
-        }
-       /*  #in{
-            width: 90px;
-            height: 50px;
-            padding: 0;
-        } */
-        /*this is the id of the login button*/
-        #in, #up{
-            width: 70px;
-            border-radius: 15px;
-            height: 40px;
-            gap: 20px;
-            padding-right: 10px;
-            border: none;
-        }
-        #up{
-            background-color: #d8860b;
-            cursor: pointer;
-        }
-        #up:hover{
-	        transform: scale(1.40);
-            transition: transform 0.3s ease;
-        }#in:hover{
-            transform: scale(1.40);
-            transition: transform 0.3s ease;
-        }
-        #buttons{
-            display: flex;
-            gap: 10px;
-        }
-        a{ 
-            color: white;
-            text-decoration: none;
-        }
-        h2{
-            font-size: 30px;
-            justify-content: center;
-            align-items: center;
-            font-weight: 700;
-        }
-        .section-2{
-            /* display: flex;
-            flex-direction: row; */
-            display: grid;
-        }
-        .shopping{
-            width: 60%;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            font-size: 18px;
-
-        }
-        .images{
-            width: 50%;
-        }
-       .img{
-        width: 40vw;
-        height: 30vh;
-     }
-     .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 30px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-     .product-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    overflow: hidden;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+nav {
+    background-color: #32cd32; /* LimeGreen */
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d8860b;
+}
+
+#buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#up, #in {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+#up { background-color: #d8860b; color: white; }
+#in { background-color: white; color: #32cd32; }
+
+#up:hover, #in:hover { transform: scale(1.1); }
+
+/* Hero Section */
+.hero-s {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('your-hero-bg.jpg');
+    background-color: #222;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
-    transition: box-shadow 0.3s;
+}
+
+/* Grid & Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.shopping-intro {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: translateY -5px;
 }
 
 .product-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
 }
 
-.product-image-placeholder {
-    height: 300px;
-    background-color:  rgb(252, 187, 11);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    color: black;
-    font-style: italic;
-    font-size: 20px;
-    font-weight: 700;
+.product-image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* This keeps images from stretching */
 }
 
 .product-info {
-    padding: 15px;
-    color: rgb(43, 221, 26);
-}
-
-.product-info h3 {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-    
-    color: rgb(43, 221, 26);
-}
-.product-info h4 {
-    font-size: 1.1em;
-    color: rgb(252, 187, 11);
-}
-
-.price {
-    font-size: 1.2em;
-    font-weight: 700;
-    
-    margin-top: 5px;
-}
-.value-prop {
-    padding: 60px 0;
+    padding: 20px;
     text-align: center;
-    display: grid;
 }
 
-.value-prop h2 {
-    font-size: 2.5em;
-    color: rgb(43, 221, 26);
-    margin-bottom: 40px;
-}
+.product-info h3 { color: #32cd32; margin-bottom: 5px; }
+.product-info h4 { color: #d8860b; font-size: 0.9rem; }
+
+.sale-price { font-weight: bold; font-size: 1.2rem; color: #333; }
+.original-price { text-decoration: line-through; color: #999; margin-left: 10px; }
+
+/* Value Prop */
+.value-prop { margin-top: 60px; text-align: center; }
+.value-prop h2 { color: #32cd32; margin-bottom: 30px; }
 
 .prop-grid {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    
 }
 
 .prop-item {
-    flex: 2;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-bottom: 4px solid #d8860b;
 }
-
-.prop-item h3 {
-    color: rgb(252, 187, 11);
-}
-
